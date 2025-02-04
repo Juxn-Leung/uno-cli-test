@@ -1,0 +1,16 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '8.1.9',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js',
+0 silly argv   name: '@uno-cli-test',
+0 silly argv   loc: 'core/core'
+0 silly argv }
+1 notice cli v8.1.9
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["command/*","core/*","models/*","utils/*"]
+3 verbose rootPath E:\cli\uno-cli-dev\uno-cli-test
+4 error Error: Invalid tag name "@uno-cli-test" of package "@uno-cli-test": Tags may not have any characters that encodeURIComponent encodes.
+4 error     at invalidTagName (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:118:15)
+4 error     at fromRegistry (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:406:13)
+4 error     at resolve (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:87:12)
+4 error     at npa (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:53:10)
+4 error     at CreateCommand.initialize (E:\cli\uno-cli-dev\uno-cli-test\node_modules\@lerna\create\dist\command.js:5377:69)

@@ -1,0 +1,22 @@
+{
+  "name": "@uno-cli-test/core",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Juxn_leung <13549909525@163.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/core.js",
+  "bin": {
+    "uno-cli-test": "bin/index.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/core.test.js"
+  }
+}
