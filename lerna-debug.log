@@ -1,16 +1,11 @@
-0 silly argv {
-0 silly argv   _: [ 'create' ],
-0 silly argv   lernaVersion: '8.1.9',
-0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js',
-0 silly argv   name: '@uno-cli-test',
-0 silly argv   loc: 'core/core'
-0 silly argv }
-1 notice cli v8.1.9
-2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["command/*","core/*","models/*","utils/*"]
-3 verbose rootPath E:\cli\uno-cli-dev\uno-cli-test
-4 error Error: Invalid tag name "@uno-cli-test" of package "@uno-cli-test": Tags may not have any characters that encodeURIComponent encodes.
-4 error     at invalidTagName (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:118:15)
-4 error     at fromRegistry (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:406:13)
-4 error     at resolve (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:87:12)
-4 error     at npa (E:\cli\uno-cli-dev\uno-cli-test\node_modules\npm-package-arg\lib\npa.js:53:10)
-4 error     at CreateCommand.initialize (E:\cli\uno-cli-dev\uno-cli-test\node_modules\@lerna\create\dist\command.js:5377:69)
+17 error Error: Command failed with exit code 1: git remote update
+17 error fatal: unable to access 'https://github.com/Juxn-Leung/uno-cli-test.git/': OpenSSL SSL_read: error:14095126:SSL routines:ssl3_read_n:unexpected eof while reading, errno 0
+17 error error: Could not fetch origin
+17 error Fetching origin
+17 error     at makeError (E:\cli\uno-cli-dev\uno-cli-test\node_modules\execa\lib\error.js:59:11)
+17 error     at module.exports.sync (E:\cli\uno-cli-dev\uno-cli-test\node_modules\execa\index.js:186:17)
+17 error     at Object.execSync (E:\cli\uno-cli-dev\uno-cli-test\node_modules\lerna\dist\index.js:1579:31)
+17 error     at updateRemote (E:\cli\uno-cli-dev\uno-cli-test\node_modules\lerna\dist\index.js:9202:18)
+17 error     at isBehindUpstream (E:\cli\uno-cli-dev\uno-cli-test\node_modules\lerna\dist\index.js:9192:3)
+17 error     at VersionCommand.initialize (E:\cli\uno-cli-dev\uno-cli-test\node_modules\lerna\dist\index.js:9486:57)
+17 error     at VersionCommand.runCommand (E:\cli\uno-cli-dev\uno-cli-test\node_modules\lerna\dist\index.js:3296:36)
