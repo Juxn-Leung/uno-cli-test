@@ -11,5 +11,19 @@
   "license": "ISC",
   "devDependencies": {
     "lerna": "^8.1.9"
+  },
+  "workspaces": [
+    "commands/*",
+    "core/*",
+    "models/*",
+    "utils/*"
+  ],
+  "dependencies": {
+    "@uno-cli-test/core": "file:core/core",
+    "@uno-cli-test/log": "file:utils/log",
+    "@uno-cli-test/utils": "^1.0.3",
+    "commander": "^13.1.0",
+    "import-local": "^3.2.0",
+    "minimist": "^1.2.8"
   }
 }

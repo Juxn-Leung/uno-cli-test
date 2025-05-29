@@ -22,5 +22,15 @@
   "gitHead": "cca67b51639c9669950930e08464162522d9c73d",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "path-exists": "^5.0.0",
+    "root-check": "^2.0.0",
+    "semver": "^7.7.1",
+    "@uno-cli-test/get-npm-info": "file:../../utils/get-npm-info",
+    "@uno-cli-test/init": "file:../../commands/init",
+    "@uno-cli-test/exec": "file:../exec"
   }
 }
